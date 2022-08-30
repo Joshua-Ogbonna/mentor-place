@@ -1,0 +1,41 @@
+nav {
+  padding: 40px 200px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .brand a {
+  text-decoration: none;
+}
+nav .brand h5 {
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-family: var(--logo-font);
+  font-weight: 800;
+}
+nav .links ul {
+  display: flex;
+  align-items: center;
+}
+nav .links ul a {
+  text-decoration: none;
+  color: #000;
+}
+nav .links ul li {
+  list-style: none;
+  margin-left: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+nav .links ul .started__button {
+  background: var(--button-background);
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+}
+nav .links ul .started__button a {
+  color: var(--primary-color);
+}

@@ -1,0 +1,27 @@
+.onboarding {
+    padding: 30px;
+}
+.onboarding__components {
+  width: 600px;
+  margin: auto;
+  padding: 30px 20px;
+  background: var(--white-color);
+}
+.onboarding h5 {
+  text-align: center;
+  font-family: var(--logo-font);
+  font-size: 40px;
+  text-decoration: underline;
+}
+.onboarding__components p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: var(--primary-font);
+    color: var(--blue-color);
+}
+.go__back i {
+    cursor: pointer;
+    font-size: 30px;
+}
+
