@@ -10,14 +10,37 @@
   --button-background: #f0ebe3;
   --white-color: #fff;
   --blue-color: #16213e;
+  --dashboard-background: #f7f8fa;
+  --dashboard-font-color: #3F3F44;
+  --dashboard-head-color: #222327;
 }
 .flex__one {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.flex__two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex__three {
+  display: flex;
+  align-items: center;
+}
 .app__container {
   padding: 0 200px;
+}
+.brand h5 {
+  text-align: center;
+  font-family: var(--logo-font);
+  font-size: 40px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+ul li {
+  list-style: none;
 }
 
 body {
@@ -27,6 +50,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--dashboard-background) !important;
 }
 
 code {

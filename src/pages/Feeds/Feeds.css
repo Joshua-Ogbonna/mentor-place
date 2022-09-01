@@ -1,0 +1,41 @@
+.feeds__component {
+  position: relative;
+}
+.feeds__component .create__post {
+  position: fixed;
+  /* top: 0; */
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background: var(--primary-color);
+  font-size: 20px;
+  color: var(--white-color);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.home__layout {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--dashboard-background);
+  padding: 100px 0;
+}
+.home__layout .feeds__sidebar,
+.home__layout .feeds__utils {
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  padding: 20px 50px;
+  background: var(--dashboard-background);
+}
+.home__layout .feeds__utils {
+  right: 0;
+}
+.home__layout .feeds__main {
+  width: 600px;
+  margin: 0 auto;
+  background: var(--dashboard-background);
+}
+

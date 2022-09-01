@@ -6,6 +6,7 @@ import "../styles/Onboarding.css";
 import FirstStep from "../../components/Onboarding/FirstStep";
 import SecondStep from "../../components/Onboarding/SecondStep";
 import GoBack from "../../components/Onboarding/GoBack";
+import ThirdStep from "../../components/Onboarding/ThirdStep";
 
 const Onboarding = () => {
   const [position, setPosition] = useState<number>(0);
@@ -20,6 +21,7 @@ const Onboarding = () => {
   const steps = [
     { name: "First Step", component: <FirstStep /> },
     { name: "Second Step", component: <SecondStep /> },
+    { name: "Third Step", component: <ThirdStep /> },
   ];
   return (
     <div className="onboarding">
@@ -33,10 +35,13 @@ const Onboarding = () => {
         <p>
           Getting started is easy! <br /> Enjoy unlimited community benefits{" "}
         </p>
-        {position > 0 && <GoBack goBack={() => setPosition(position => position - 1)} />}
+        {position > 0 && (
+          <GoBack goBack={() => setPosition((position) => position - 1)} />
+        )}
         {steps[position].component}
         <div className="form__area">
           {position < 2 && <button onClick={handleSetPosition}>Next</button>}
+          {position === 2 && <button onClick={handleSetPosition}>Submit</button>}
         </div>
       </div>
     </div>

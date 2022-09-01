@@ -19,7 +19,7 @@ textarea {
 .form__area {
     margin: 20px 0;
 }
-.form__area button {
+.form__area button, button {
     width: 100%;
     background: var(--primary-color);
     color: var(--white-color);
@@ -28,6 +28,7 @@ textarea {
     height: 50px;
     border: none;
     border-radius: 5px;
+    text-align: center;
 }
 .form__group {
     margin: 20px 0;

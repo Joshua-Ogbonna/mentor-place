@@ -1,0 +1,24 @@
+.feeds__nav {
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feeds__nav .brand h5 {
+  text-align: left !important;
+  font-size: 30px !important;
+  font-weight: 500;
+}
+.nav__right {
+    display: flex;
+    align-items: center;
+}
+.nav__right i {
+    margin-right: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
