@@ -3,7 +3,6 @@
 }
 .feeds__component .create__post {
   position: fixed;
-  /* top: 0; */
   bottom: 20px;
   right: 20px;
   padding: 10px;
@@ -25,8 +24,8 @@
 .home__layout .feeds__sidebar,
 .home__layout .feeds__utils {
   position: fixed;
-  width: 25%;
-  height: 100%;
+  width: 23%;
+  min-height: 100%;
   padding: 20px 50px;
   background: var(--dashboard-background);
 }

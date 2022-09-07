@@ -10,7 +10,7 @@ const Navigation = () => {
       </div>
       <div className="links">
         <ul>
-          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/">Home</Link></li>
           {/* <li><Link to="/pricing">Pricing</Link></li> */}
           <li><Link to="/login">Login</Link></li>
           <li className="started__button flex__one"><Link to="/onboarding">Get Started</Link></li>

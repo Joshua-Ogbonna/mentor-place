@@ -20,3 +20,17 @@ export interface Post {
     postLikes: number,
     comments: Comment[] | []
 }
+
+export interface Tribe {
+    id: string
+    tribeName: string,
+    tribeProfile: string
+    tribeMembersNo: number,
+}
+
+export interface Profile {
+    profilePicture: string,
+    profileUsername: string,
+    profileAbout: string,
+    profileName: string
+}

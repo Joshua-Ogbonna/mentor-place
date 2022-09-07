@@ -1,0 +1,40 @@
+/* Tribes Filter */
+.tribes__section .tribes__container {
+    
+    padding: 100px 50px;
+}
+.tribes__section .tribes__filter {
+    background: var(--white-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+.tribes__section .right__filter button {
+    width: 200px;
+    font-size: 14px;
+    outline: 0;
+}
+.tribes__section .right__filter button i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.tribes__section .first__filter i {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.tribes__section .first__filter .Dropdown-control {
+    width: 150px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.tribes__section .your__tribes {
+    margin-top: 30px;
+}
+.tribes__section .your__tribes .tribes {
+    flex-wrap: wrap;
+}
+.tribes__section .your__tribes > h5 {
+    color: var(--dashboard-head-color);
+}

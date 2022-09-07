@@ -3,7 +3,7 @@
 }
 .feeds__sidebar .first__layer ul li {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 .feeds__sidebar .first__layer ul li a {
@@ -16,8 +16,10 @@
   margin-right: 5px;
   margin-bottom: 2px;
 }
-.feeds__sidebar .second__layer h5 {
+.feeds__sidebar .second__layer h5,
+.feeds__utils .heading h5 {
   color: var(--dashboard-head-color);
+  font-size: 18px;
 }
 .feeds__sidebar .second__layer .recent__messages .recent__message {
   /* background-color: var(--primary-color); */
@@ -61,7 +63,9 @@
   cursor: pointer;
   font-size: 30px;
 }
-.feeds__sidebar .first__layer,
+.feeds__sidebar .first__layer {
+  margin-bottom: 120px;
+}
 .feeds__sidebar .second__layer {
   margin-bottom: 50px;
 }
@@ -73,56 +77,87 @@
   font-size: 20px;
 }
 
-
 /* Feeds Main Page */
 .feeds__main {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .feeds__main .posts .post {
-    border: 10px;
-    padding: 20px;
-    min-height: 200px;
-    position: relative;
-    width: 100%;
+  border: 10px;
+  padding: 20px;
+  min-height: 200px;
+  position: relative;
+  width: 100%;
 }
 .feeds__main .posts .post .post__top .poster__details {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .feeds__main .posts .post {
-    margin-bottom: 20px;
-    cursor: pointer;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 .feeds__main .posts .post img {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
 }
 .feeds__main .posts .post h5 {
-    font-size: 14px;
+  font-size: 14px;
 }
 .feeds__main .posts .post p {
-    font-size: 12px;
-    line-height: 0;
+  font-size: 12px;
+  line-height: 0;
 }
 .feeds__main .posts .post .post__details .post__content {
-    font-size: 15px;
-    font-weight: 400;
-    /* font-family: var(--secondary-font); */
+  font-size: 15px;
+  font-weight: 400;
+  /* font-family: var(--secondary-font); */
 }
 .feeds__main .posts .post .post__actions {
-    position: absolute;
-    bottom: 10px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
 }
 .feeds__main .posts .post .post__actions .likes i,
 .feeds__main .posts .post .post__actions .comments i {
-    cursor: pointer;
-    margin-left: 20px;
-    font-size: 16px;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+/* Feed utils */
+.feeds__utils .suggested__tribes {
+  margin-bottom: 50px;
+  height: 320px;
+}
+.feeds__utils .suggested__tribes .tribes .tribe {
+  width: 100%;
+  /* height: 200px; */
+  margin-bottom: 10px;
+}
+.feeds__utils .suggested__tribes .tribes .tribe .tribe__details img {
+  width: 50px;
+  height: 40px;
+  margin-right: 10px;
+}
+.feeds__utils .suggested__tribes .tribes .tribe .tribe__details {
+  display: flex;
+  align-items: center;
+}
+.feeds__utils .suggested__tribes .tribes .tribe .tribe__details h5 {
+  font-size: 14px;
+  line-height: 0;
+  margin-top: 20px;
+}
+.feeds__utils .suggested__tribes .tribes .tribe .tribe__details p {
+  font-size: 12px;
+}
+.feeds__utils .suggested__tribes .tribes .tribe button {
+  font-size: 12px;
+  height: 40px;
 }

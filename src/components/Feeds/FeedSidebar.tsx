@@ -10,7 +10,12 @@ const FeedSidebar = () => {
       <div className="first__layer">
         <ul>
           <li>
-            <Link to="">
+            <Link to="/">
+              <i className="bx bx-home-alt-2"></i> Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/tribes">
               <i className="bx bx-group"></i> Tribes
             </Link>
           </li>
@@ -53,10 +58,10 @@ const FeedSidebar = () => {
                 <div className="sender__image">
                   <img src={message.senderPicture} alt={message.sender} />
                 </div>
-                  <div className="message__details">
-                    <h5>{message.sender}</h5>
-                    <span>{message.timeSent}</span>
-                  </div>
+                <div className="message__details">
+                  <h5>{message.sender}</h5>
+                  <span>{message.timeSent}</span>
+                </div>
               </div>
               <div className="message__action">
                 <i className="bx bx-message-rounded-detail"></i>
@@ -65,11 +70,11 @@ const FeedSidebar = () => {
           ))}
         </div>
       </div>
-      <div className="third__layer">
+      {/* <div className="third__layer">
         <button className="flex__one">
           <i className="bx bx-plus"></i> Create a Community
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
