@@ -25,7 +25,7 @@ const Login = () => {
       {/* <Navigation /> */}
       <div className="brand">
         <h5>
-          <Link to="/">Trybe</Link>
+          <Link to="/home">Trybe</Link>
         </h5>
       </div>
       <div className="login__form onboarding__components shadow p-3 mb-5 bg-body rounded">
