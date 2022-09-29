@@ -20,8 +20,8 @@ function App() {
       <Provider store={store}>
         <BrowserRouter>
           <Routes>
-            <Route element={<PublicRoute />}>
               <Route path="/home" element={<Home />} />
+            <Route element={<PublicRoute />}>
               <Route path="/onboarding" element={<Onboarding />} />
               <Route path="/login" element={<Login />} />
             </Route>

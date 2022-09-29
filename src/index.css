@@ -13,6 +13,7 @@
   --dashboard-background: #f7f8fa;
   --dashboard-font-color: #3F3F44;
   --dashboard-head-color: #222327;
+  --background-dark: #181818;
 }
 .flex__one {
   display: flex;
@@ -35,7 +36,6 @@
   text-align: center;
   font-family: var(--logo-font);
   font-size: 40px;
-  text-decoration: underline;
   cursor: pointer;
   color: var(--primary-color);
 }

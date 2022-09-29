@@ -1,5 +1,5 @@
 .onboarding {
-    padding: 30px;
+    padding: 200px 30px 30px;
 }
 .onboarding__components {
   width: 600px;
@@ -18,7 +18,7 @@
     font-size: 15px;
     font-weight: 800;
     font-family: var(--primary-font);
-    color: var(--blue-color);
+    color: var(--background-dark);
 }
 .go__back i {
     cursor: pointer;

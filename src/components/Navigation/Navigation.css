@@ -1,5 +1,5 @@
 nav {
-  padding: 15px 50px 0;
+  padding: 15px 200px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,30 +9,39 @@ nav {
   background: var(--white-color);
 }
 nav .brand a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 nav .brand h5 {
   font-size: 30px;
   cursor: pointer;
-  color: var(--primary-color);
+  color: var(--background-dark);
   font-family: var(--logo-font);
   font-weight: 800;
+  letter-spacing: 0.4rem;
+  text-decoration: underline;
 }
 nav .links ul {
   display: flex;
   align-items: center;
+  margin-top: 14px;
 }
 nav .links ul a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 nav .links ul li {
   list-style: none;
   margin-left: 40px;
   cursor: pointer;
-  font-size: 16px;
   font-family: var(--secondary-font);
   font-weight: 500;
+  color: var(--background-dark);
+  opacity: 0.5;
+  font-size: 15px;
+  /* letter-spacing: 0.2rem; */
+}
+nav .links ul li:hover, nav .links ul .dashboard__link {
+  opacity: 1;
 }
 nav .links ul .started__button {
   background: var(--button-background);
@@ -42,4 +51,11 @@ nav .links ul .started__button {
 }
 nav .links ul .started__button a {
   color: var(--primary-color);
+}
+nav .links .login__button {
+  border: 1px solid var(--background-dark);
+  padding: 5px 30px 3px;
+  border-radius: 100px;
+  display: flex;
+  opacity: 1;
 }

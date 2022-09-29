@@ -9,7 +9,7 @@ interface AuthReducer {
 }
 
 const initialState: AuthReducer = {
-    isLoggedIn: sessionStorage.getItem("token") ? true : false,
+    isLoggedIn: false,
     token: sessionStorage.getItem("token") || "",
     loading: false,
     error: ""

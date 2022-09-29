@@ -16,7 +16,7 @@ const Tribe = () => {
       <TribeNav />
       <div className="home__layout">
         <TribeSidebar />
-        <TribesMain />
+        <TribesMain /> 
         <TribeUtil />
       </div>
     </>

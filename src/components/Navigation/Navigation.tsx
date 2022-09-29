@@ -4,16 +4,22 @@ import "./Navigation.css"
 
 const Navigation = () => {
   return (
-    <nav>
+    <nav className="shadow">
       <div className="brand">
-        <Link to="/"><h5>Trybe</h5></Link>
+        <Link to="/home"><h5>Trybe</h5></Link>
       </div>
-      <div className="links">
+      <div className="links first__link">
         <ul>
-          <li><Link to="/">Home</Link></li>
-          {/* <li><Link to="/pricing">Pricing</Link></li> */}
-          <li><Link to="/login">Login</Link></li>
-          <li className="started__button flex__one"><Link to="/onboarding">Get Started</Link></li>
+          <li>Events</li>
+          <li>Communities</li>
+          <li>Pricing</li>
+          <li>Features</li>
+        </ul>
+      </div>
+      <div className="links second__link">
+        <ul>
+          <li className="dashboard__link">Dashboard</li>
+          <Link to="/login"><li className="login__button">Login</li></Link>
         </ul>
       </div>
     </nav>

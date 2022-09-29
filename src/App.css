@@ -21,7 +21,7 @@ textarea {
 }
 .form__area button, button {
     width: 100%;
-    background: var(--primary-color);
+    background: var(--background-dark);
     color: var(--white-color);
     font-size: 16px;
     font-weight: 600;
