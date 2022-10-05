@@ -8,11 +8,13 @@ import "./App.css";
 import Home from "./pages/Home";
 import Onboarding from "./pages/Auth/Onboarding";
 import Login from "./pages/Auth/Login";
-import Feeds from "./pages/Feeds/Feeds";
-import AllFeeds from "./components/Feeds/components/AllFeeds";
-import Tribes from "./components/Feeds/components/Tribes";
-import Tribe from "./pages/Tribe";
 import { PrivateAuth, PublicRoute } from "./pages/PrivateAuth";
+import CreateEvent from "./components/Events/CreateEvent";
+import Dashboard from "./pages/Dashboard";
+import DashboardHome from "./components/DashboardComponents/Index";
+import NotFound from "./components/404";
+import CreateCommunity from "./components/DashboardComponents/CreateCommunity";
+import Tribe from "./pages/Tribe";
 
 function App() {
   return (
@@ -20,19 +22,19 @@ function App() {
       <Provider store={store}>
         <BrowserRouter>
           <Routes>
-              <Route path="/home" element={<Home />} />
-            <Route element={<PublicRoute />}>
-              <Route path="/onboarding" element={<Onboarding />} />
-              <Route path="/login" element={<Login />} />
-            </Route>
+            <Route path="/home" element={<Home />} />
+            <Route element={<PublicRoute />}></Route>
+            <Route path="/onboarding" element={<Onboarding />} />
+            <Route path="/login" element={<Login />} />
             {/* Feeds Component */}
-            <Route element={<PrivateAuth />}>
-              <Route path="/" element={<Feeds />}>
-                <Route path="" element={<AllFeeds />} />
-              </Route>
-              <Route path="/tribes" element={<Tribes />} />
-              <Route path="tribe/:id" element={<Tribe />}></Route>
+            <Route path="/" element={<Dashboard />}>
+              <Route path="" element={<DashboardHome />} />
+              <Route path="/new-community" element={<CreateCommunity />} />
             </Route>
+            <Route path="/tribe/:id" element={<Tribe />} />
+            <Route path="/create-event" element={<CreateEvent />} />
+            <Route element={<PrivateAuth />}></Route>
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </Provider>

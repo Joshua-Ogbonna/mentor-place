@@ -18,7 +18,7 @@ const Navigation = () => {
       </div>
       <div className="links second__link">
         <ul>
-          <li className="dashboard__link">Dashboard</li>
+          <Link to="/"><li className="dashboard__link">Dashboard</li></Link>
           <Link to="/login"><li className="login__button">Login</li></Link>
         </ul>
       </div>

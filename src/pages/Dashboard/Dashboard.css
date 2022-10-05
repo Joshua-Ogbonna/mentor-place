@@ -1,0 +1,159 @@
+.dashboard__index {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  /* align-items: ; */
+}
+.dashboard__index .dashboard__sidebar {
+  background: #eeeeee;
+  height: 100%;
+  width: 30%;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+}
+.dashboard__index .dashboard__sidebar a {
+  text-decoration: none;
+}
+.dashboard__index .dashboard__sidebar .brand {
+  font-family: var(--logo-font);
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 99px;
+  color: #fff;
+  background: #a10035;
+  margin-bottom: 50px;
+  margin-left: 5px;
+}
+.dashboard__index .dashboard__sidebar .sidebar__links {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.dashboard__index .dashboard__sidebar .sidebar__links a {
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  padding: 15px 10px 10px 5px;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.dashboard__index .dashboard__sidebar .sidebar__links a:hover {
+  background: #000000;
+  color: #eeeeee;
+}
+.dashboard__index .dashboard__sidebar .sidebar__links .active {
+  color: #a10035;
+  opacity: 1;
+}
+.dashboard__index .dashboard__sidebar .sidebar__links a i {
+  margin: 0 10px 10px 0;
+}
+
+/* Main Dashboard Styles */
+.dashboard__index .main__dashboard {
+  padding: 50px;
+  position: absolute;
+  width: 70%;
+  right: 0;
+}
+.dashboard__index .main__dashboard .dashboard__inner {
+  width: 700px;
+}
+.dashboard__index .main__dashboard .dashboard__home span {
+  font-size: 22px;
+  font-weight: 500;
+  opacity: 0.8;
+  font-family: var(--primary-font);
+}
+.dashboard__index .main__dashboard .dashboard__home h4 {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  line-height: 40px;
+}
+.dashboard__index .main__dashboard .dashboard__home .section {
+  margin: 40px 0 20px;
+}
+.dashboard__index .main__dashboard .dashboard__home .section h5 {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 600;
+}
+.dashboard__index
+  .main__dashboard
+  .dashboard__home
+  .section
+  .section__head
+  button {
+  width: 100px;
+  height: 30px;
+  font-weight: 300;
+  background: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.dashboard__index .main__dashboard .dashboard__home .section .no__community {
+  text-align: center;
+  padding: 50px 20px;
+}
+.dashboard__index .main__dashboard .dashboard__home .section .no__community i {
+  font-size: 50px;
+}
+.dashboard__index .main__dashboard .dashboard__home .section .no__community p {
+  font-size: 15px;
+  width: 500px;
+  margin: auto;
+}
+.dashboard__index .main__dashboard .dashboard__home .quick__links .actions a {
+  width:300px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  background: #000;
+  opacity: 0.8;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.dashboard__index .main__dashboard .dashboard__home .quick__links .actions a:hover {
+  background: #a10035;
+}
+.dashboard__index .main__dashboard .dashboard__home .quick__links .actions a i {
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+.dashboard__index .main__dashboard .dashboard__home .insights a {
+  width: 300px;
+  text-decoration: none;
+  background: #000;
+  opacity: 0.8;
+  color: #eeeeee;
+  padding: 10px;
+  border-radius: 5px;
+}
+.dashboard__index .main__dashboard .dashboard__home .insights a p {
+  font-size: 13px;
+  line-height: 5px;
+}
+.dashboard__index .main__dashboard .dashboard__home .insights a .insight__head .number {
+  font-size: 30px;
+  font-weight: 600;
+}

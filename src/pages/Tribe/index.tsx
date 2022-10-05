@@ -1,26 +1,14 @@
-import React from "react";
-
-import MetaTagComponent from "../../components/Reusables/MetaTags";
-import TribeNav from "../../components/Tribe/TribeNav";
-import TribeSidebar from "../../components/Tribe/TribeSidebar";
-import TribesMain from "../../components/Tribe/TribesMain";
-import TribeUtil from "../../components/Tribe/TribeUtil";
-import "../Feeds/Feeds.css";
-import "./tribe.css"
+import React from 'react'
+import MainTribe from '../../components/TribeComponents/MainTribe'
+import Sidebar from '../../components/TribeComponents/Sidebar'
 
 const Tribe = () => {
-
   return (
-    <>
-      <MetaTagComponent title={`Tribe `} />
-      <TribeNav />
-      <div className="home__layout">
-        <TribeSidebar />
-        <TribesMain /> 
-        <TribeUtil />
-      </div>
-    </>
-  );
-};
+    <div className="dashboard__index">
+      <Sidebar />
+      <MainTribe />
+    </div>
+  )
+}
 
-export default Tribe;
+export default Tribe

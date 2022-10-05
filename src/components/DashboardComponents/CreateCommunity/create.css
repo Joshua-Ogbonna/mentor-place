@@ -1,0 +1,104 @@
+.create__community .section__head h3 {
+  font-size: 24px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+.create__community .section__head a {
+  width: 30px;
+  height: 30px;
+  background: #eee;
+  text-decoration: none;
+  color: #000;
+  border-radius: 99px;
+}
+.create__community .section {
+  margin-top: 20px;
+}
+.create__community .section h5 {
+  font-size: 20px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+.create__community .section > p {
+  font-size: 14px;
+  line-height: 5px;
+  font-weight: 400;
+}
+.create__community .basic__information .logo {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+.create__community .basic__information .logo i {
+  font-size: 80px;
+  color: #eeeeee;
+}
+.create__community .basic__information .logo h5 {
+  font-size: 14px;
+  font-family: var(--primary-font);
+}
+.create__community .options {
+  margin-top: 30px;
+}
+.create__community .options .option {
+  padding: 20px 10px;
+  font-family: var(--secondary-font);
+  width: 200px;
+  height: 140px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.create__community .options .active {
+  border: 1px solid #a10035;
+  color: #a10035;
+}
+.create__community .options .option h6 {
+  font-size: 18px;
+  font-weight: 600;
+  height: 20px;
+}
+.create__community .options .option p {
+  font-size: 14px;
+  line-height: 15px;
+}
+.create__community .options .option i {
+  font-size: 20px;
+  /* color: #a10035; */
+  /* color: #fff; */
+}
+.create__community .section button {
+  width: 200px;
+  font-weight: 500;
+  color: #fff;
+  background: #000;
+  border: 1px solid #fff;
+  font-family: var(--primary-font);
+}
+.create__community .section button i {
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.create__community .questions {
+  padding: 40px;
+  border: 1px solid #eee;
+}
+.create__community .questions button {
+  width: 150px;
+  font-size: 12px;
+  height: 30px;
+}
+.create__community .actions {
+  margin-top: 10px;
+}
+.create__community .actions i {
+  cursor: pointer;
+}
+.create__community .form__area input[type="checkbox"] {
+  width: 10px;
+  height: 10px;
+}
+.create__community .form__area input:checked {
+  background: #000;
+}

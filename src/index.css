@@ -29,6 +29,15 @@
   display: flex;
   align-items: center;
 }
+.flex__four {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.flex__five {
+  display: flex;
+  align-items: flex-start;
+}
 .app__container {
   padding: 0 200px;
 }
